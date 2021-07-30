@@ -1,45 +1,48 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="Style.css">
-
+<html lang="en">
 <head>
-   <nav class="header-bar">
-    <ul>
-        <li>About</li>
-        <li>Store</li>
-        <li>Gmail</li>
-        <li>Images</li>
-    </ul>
-   </nav>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Google Homepage</title>
+<link rel="stylesheet" href="Style.css" />
+<script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 
 <body>
-    <div class="logo">
-        <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo">
-        </img>
-    </div>
-    <form id="search-box">
-        <input
-            type="text"
-            id="search-bar"
-            name="search-bar"
-        ></input>
-        <button id="btn1">Google Search</button>
-        <button id="btn2">I'm Feeling Lucky</button>
-    </form>
-</body>
+   <nav class="nav">
+    <a class="nav-link" href="#">Gmail</a>
+    <a class="nav-link" href="#">Images</a>
+    <a class="nav-link-round" href="#"><i class="fas fa-bars"></i></a>
+    <a class="nav-link-round" href="https://github.com/hwhetstone3" target="_blank"><img class="user-avatar" src="https://imgix.ranker.com/user_node_img/50045/1000889229/original/1-photo-u1?auto=format&q=60&fit=crop&fm=pjpg&w=375" alt="" /></a>
+   </nav>
 
-<footer>
-<p>United Kingdom</p>
-<p>Carbon neutral since 2007</p>
-<nav class="footer-bar">
-<ul>
-    <li>Advertising</li>
-    <li>Business</li>
-    <li>How Search Works</li>
-    <li>Privacy</li>
-    <li>Terms</li>
-    <li>Settings</li>
-</ul>
-</nav>
+<main class="main">
+    <img id="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" />
+    <div class="searchbar">
+        <img class="search-icon" src="https://icon-library.com/images/google-search-icon/google-search-icon-13.jpg" alt=""/>
+        <input class="search-input" type="text"/>
+    </div>
+    <div class="search-buttons">
+        <a href="#"><button class="button-search">Google Search</button></a>
+        <a href="#"><button class="button-search">I'm Feeling Lucky</button></a>
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="left-footer">
+        <a class="footer-link" href="#">About</a>
+        <a class="footer-link" href="#">Advertising</a>
+        <a class="footer-link" href="#">Business</a>
+        <a class="footer-link" href="#">How Search Works</a>
+    </div>
+    <div class="right-footer">
+        <a class="footer-link" href="#">Privacy</a>
+        <a class="footer-link" href="#">Terms</a>
+        <a class="footer-link" href="#">Settings</a>
+    </div>
 </footer>
+</body>
+</html>
